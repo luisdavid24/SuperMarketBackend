@@ -1,0 +1,26 @@
+type Query {
+    findProductById(productId: String) : Product,
+    ##findAllProduct : [Product]
+}
+
+# type Mutation {
+#     createProduct(inputProduct: InputStudent!) : Product,
+#     deleteProductById(productIdId: String) : String
+# }
+
+type Product {
+    id: ID,
+    name: String,
+    description: String,
+    price: Int,
+    category:String
+}
+
+input InputStudent {
+    name: String,
+    description: String,
+    price: Int,
+    category:String
+}
+
+
